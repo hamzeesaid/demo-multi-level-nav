@@ -5,8 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Multi Level Nav Demo</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+
+    <header>
+        <h1>Multi Level Nav</h1>
+        <nav>
+            <!-- to create a second level nav , nest a ul inside an existing li -->
+            <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Articles</a></li>
+            <li>
+
+                <a href="#">Books</a>
+                <!-- add a second level of navigation that belongs to books -->
+                <ul class="submenu">
+                    <li><a href="#">Java Script for Web designers</a></li>
+                    <li><a href="#">Git for Humans</a></li>
+                    <li><a href="#">Desiging for touch</a></li>
+                    <li><a href="#">Progressive web apps</a></li>
+                    <li><a href="#">The New Css Layout</a></li>
+                </ul>
+
+            </li>
+            <li>
+                <a href="#">Events</a>
+                <!-- add a second level nav that belongs to event -->
+                <ul class="submenu">
+                    <li><a href="#">Front End Dev Con</a></li>
+                    <li><a href="#">React Summit</a></li>
+                    <li><a href="#">Desiging for performance</a></li>
+                </ul>
+
+            
+            </li>
+            <li><a href="#">Memberships</a></li>
+        </ul></nav>
+    </header>
     
 </body>
 </html>
